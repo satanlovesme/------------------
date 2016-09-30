@@ -1,0 +1,68 @@
+div {
+	padding: 15px;
+}
+
+#reviewDeathStars-input input:checked ~ label, #reviewDeathStars-input label, #reviewDeathStars-input label:hover, #reviewDeathStars-input label:hover ~ label {
+  background: url('./images/2.png') no-repeat;
+}
+
+
+#reviewDeathStars-input {
+  position: relative;
+  float: left;
+}
+
+#reviewDeathStars-input input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  
+  width: 50px;
+  height: 50px;
+  
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+#reviewDeathStars-input input:checked ~ label {
+  background-position: 0 -50px;
+  height: 50px;
+  width: 50px;
+}
+
+#reviewDeathStars-input label {
+  background-position: 0 0;
+  height: 50px;
+  width: 50px;
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+  
+  position: relative;
+  z-index: 1;
+}
+
+#reviewDeathStars-input label:hover, #reviewDeathStars-input label:hover ~ label {
+  background-position: 0 -50px;
+  height: 50px;
+  width: 50px;
+}
+
+#reviewDeathStars-input #DeathStar-0 {
+  left: 0px;
+}
+#reviewDeathStars-input #DeathStar-1 {
+  left: 50px;
+}
+#reviewDeathStars-input #DeathStar-2 {
+  left: 100px;
+}
+#reviewDeathStars-input #DeathStar-3 {
+  left: 150px;
+}
+#reviewDeathStars-input #DeathStar-4 {
+  left: 200px;
+}
+#reviewDeathStars-input #DeathStar-5 {
+  left: 250px;
+}
